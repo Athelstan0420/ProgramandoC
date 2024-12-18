@@ -1,20 +1,39 @@
-#include <stdio.h>
-#include <stdlib.h>
+/*
+    Crie um programa que peça ao usuário para digitar números inteiros positivos e some esses números.
+    O programa deve terminar quando o usuário digitar um número negativo. No final, 
+    o programa deve exibir a soma dos números positivos digitados.
+*/
+  
+  
+  
+  #include <stdio.h>
+  #include <stdlib.h>
 
-int main(int argc, char const *argv[])
-{   
-    int temp;
-    printf("Informe a temperatura: ");
-    scanf("%i", &temp);
-    if (temp <= 0)
+  int main(int argc, char const *argv[])
+  {
+
+    int num1, num2;
+    int soma = 0;
+
+    printf("Digite o primeiro valor positivo: ");
+    scanf("%i", &num1);
+    if (num1 < 0)
     {
-        printf("A agua na temperatura %i esta no estado solido \n", temp);
+        printf("OPS!!");
+        return 0;
     }
-    else if (temp > 0 && temp < 100)
-    {
-        printf("A agua na temperatura %i esta no estado liquido \n", temp);
+    printf("Digite o segundo valor positivo: ");
+    scanf("%i", &num2); 
+    if (num2 < 0)
+    {   
+        printf("OPS!!");
+        return 0;
     }
-    else  printf("A agua na temperatura %i esta no estado gasoso \n", temp);
+
+    soma = num1 + num2;
+    printf("%i + %i = %i \n", num1, num2, soma);    
+
     system("pause");
     return 0;
-}
+  }
+  
