@@ -1,0 +1,52 @@
+------------------------------
+#include <stdio.h>
+/* -> Coment várias rows.
+biblioteca de arquivos de cabeçalho que
+permite trabalhar com
+ funções de entrada e saída, ACIMA;
+*/
+---------------------------------
+int main(){
+    //'main' -> funcao
+    ----------------------------------------
+    printf("Ola Mundo!\n"); // Saída;
+    // Sempre utilize '\n' for add new rows.
+    printf("Nova linha");
+    -------------------------------------------
+    // '\t' -> espaçamento horizontal;
+    // '/" text /"' -> text em aspas;
+    ----------------------------------------
+    // Declarar variáveis: TIPO NOME = VAlOR;
+    int num;
+    int num = 10;
+    float decimal = 4.4;
+    ---------------------------------------------------------
+    // Especificadores de formato:
+    /*
+    "%d" -> inteiro;
+    "%f" -> float;
+    */
+    printf("seu número é %d", num);
+    printf("%f é a sua nota", decimal);
+    -----------------------------------------------------------
+    int a = 1, b = 2, c = 3; //Declarar multivariáveis;
+    return 0 // Encerrar programa.
+
+}
+
+=====================================================================================================
+
+#include <stdio.h>
+----------------------------------------------------------
+#include <stdlib.h> // biblioteca para utilizar o System("pause");
+---------------------------------------------------
+
+int main(int argc, char const *argv[]){
+    printf("ola mundo!\n");
+    ----------------------------------------------
+    system("pause"); // Para quando executar pelo Windows e o programa manter o .exe aberto.
+    ----------------------------------------------
+    return 0; // Encerrar programa.
+}
+
+

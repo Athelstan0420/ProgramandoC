@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+
+{
+    // Variáveis;
+    int num1 = 0;
+    float num2 = 1.0;
+
+    //Especificadores;
+    printf("%d \n", num1); // P/ inteiros;
+    printf("%.2f \n",num2); // P/ decimais; .2f -> Duas casas decimais; 
+    printf("%i", sizeof(num1)); // Operador que indica o tamanho da variável em bytes;
+    //scanf("%especificador", var); //Entrada de dados;
+    return 0;
+}
