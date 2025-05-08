@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+Avaliação Implemente uma função
+recursiva chamada somaĄten que 
+recebe um número inteiro positivo
+n e retorna a soma de todos os números
+de 1 até n. 
+Por exemplo:
+somaAteN(3) deve retornar 6, pois 1+2+3=6
+*/
+
+int soma_ate(int n) {
+   if (n == 0) {
+       return 0;
+   }
+   return n + soma_ate(n-1);   
+}
+
+int main(){
+
+    int valor;
+    printf("digite um número: ");
+    scanf("%i", &valor);
+    int contador = soma_ate(valor);
+    printf("o valor da soma é: %i", contador);
+    return 0;
+
+}
